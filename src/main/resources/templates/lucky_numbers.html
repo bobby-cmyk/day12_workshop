@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Lucky Numbers</title>
+</head>
+<body>
+    <h1>Congratulations!!!</h1>
+
+    <hr>
+
+    <h2>Hey <span data-th-text="${name}"></span></h2>
+
+    <p>Here's your <span data-th-text="${count}"></span> lucky number(s).</p>
+
+    <table>
+        <tr>
+            <td data-th-each="numberImage, status:${numberImages}">
+                <img data-th-src="'/numbers/'+${numberImage}" width="160", height="200">
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

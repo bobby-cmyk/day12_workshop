@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Numbers</title>
+</head>
+<body>
+
+    <h1>List of Numbers</h1>
+
+    <hr>
+
+    <h2>Here are your list of numbers</h2>
+
+    <table>
+        <tr>
+            <td td data-th-each="numberImage, status:${numberImages}">
+                <img data-th-src="'/numbers/'+${numberImage}" width="160", height="200">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
